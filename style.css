@@ -13,6 +13,10 @@
     --urgent-red: #d32f2f;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.8;
@@ -20,7 +24,6 @@ body {
     background-color: var(--bg-color);
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 /* Back to Top Button */
