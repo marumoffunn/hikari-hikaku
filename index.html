@@ -706,9 +706,9 @@
         </div>
     </footer>
 
-    <a href="#" class="back-to-top" id="backToTop" aria-label="上に戻る">
+    <button class="back-to-top" id="backToTop" aria-label="上に戻る" type="button">
         ↑
-    </a>
+    </button>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -722,8 +722,7 @@
                 }
             });
 
-            backToTopButton.addEventListener('click', function (e) {
-                e.preventDefault();
+            backToTopButton.addEventListener('click', function () {
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'
