@@ -705,6 +705,32 @@
             <p>&copy; 2026 光回線比較ナビ All Rights Reserved.</p>
         </div>
     </footer>
+
+    <a href="#" class="back-to-top" id="backToTop" aria-label="上に戻る">
+        ↑
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const backToTopButton = document.getElementById('backToTop');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+
+            backToTopButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
