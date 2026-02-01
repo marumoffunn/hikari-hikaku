@@ -18,7 +18,7 @@
         <div class="container container-center">
             <h1 class="game-title">QUEST: <br>DEFEAT THE LAG</h1>
             <p class="sub-title">速度・料金で選ぶ！<br>おすすめ光回線・WiFiランキング</p>
-            <p class="pixel-text">{{sub_headline}}</p>
+            <p class="pixel-text"><h2 class="pixel-subtitle">〜選ばれし勇者と最強の回線伝説〜</h2></p>
             <a href="#prologue" class="start-btn">▷ ぼうけんを はじめる</a>
         </div>
         <div class="scanlines"></div>
@@ -57,10 +57,24 @@
     <!-- NEW: Monster Info -->
     <section class="monster-section">
         <div class="container">
-            <h2 class="section-title">▼ まものの しょうたいが わかった！</h2>
-            <div class="terminal-window">
-                {{monster_info}}
-            </div>
+            
+        <h3 class="pixel-heading">▼ 魔物図鑑（ラグの正体）</h3>
+        <div class="pixel-box">
+            
+        <p><strong>■ Ping値（ピンち）：</strong><br>
+        勇者の「反応速度」じゃ。この数値が小さいほど、敵より早く動ける。<br>目安：15ms以下なら最強、50ms以上は危険じゃ！</p>
+        <hr class="pixel-hr">
+    
+        <p><strong>■ Jitter（ジッター）：</strong><br>
+        回線の「揺らぎ」じゃ。これが不安定だと、突然ワープしたり弾が抜けたりするぞ。</p>
+        <hr class="pixel-hr">
+    
+        <p><strong>■ Packet Loss（パケットロス）：</strong><br>
+        攻撃データが消滅することじゃ。有線LANを使うことで防げるぞ。</p>
+        
+    
+        </div>
+    
         </div>
     </section>
 
@@ -429,16 +443,126 @@
             </div>
 
             <!-- NEW: Comparison Matrix -->
-            <section class="comparison-section">
-                <h2 class="section-title">▼ ぜんぶの ぶきを くらべる</h2>
-                {{comparison_table}}
-            </section>
+            
+        <section class="rpg-section">
+            <h3 class="pixel-heading">▼ 伝説の装備・性能ひかく表</h3>
+            <div class="table-scroll">
+                <table class="pixel-table">
+                    <thead>
+                        <tr><th>装備名（回線）</th><th>実質月額</th><th>最大速度</th><th>Ping期待値</th><th>契約縛り</th><th>キャッシュバック</th></tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td class="bold-text">NURO光</td>
+            <td>980円〜</td>
+            <td>2Gbps</td>
+            <td>◎ (極速)</td>
+            <td>2年</td>
+            <td>45,000円</td>
+        </tr>
+    
+        <tr>
+            <td class="bold-text">auひかり</td>
+            <td>2,500円〜</td>
+            <td>1Gbps</td>
+            <td>◯ (安定)</td>
+            <td>3年</td>
+            <td>77,000円</td>
+        </tr>
+    
+        <tr>
+            <td class="bold-text">GMO光</td>
+            <td>3,400円〜</td>
+            <td>1Gbps</td>
+            <td>◯ (普通)</td>
+            <td>なし</td>
+            <td>30,000円</td>
+        </tr>
+    
+        <tr>
+            <td class="bold-text">ドコモ光</td>
+            <td>4,000円〜</td>
+            <td>1Gbps</td>
+            <td>◯ (普通)</td>
+            <td>2年</td>
+            <td>40,000円</td>
+        </tr>
+    
+        <tr>
+            <td class="bold-text">SB光</td>
+            <td>4,000円〜</td>
+            <td>1Gbps</td>
+            <td>◯ (普通)</td>
+            <td>2年</td>
+            <td>37,000円</td>
+        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    
 
             <!-- NEW: Detailed Guides -->
-            <section class="detailed-guides-section">
-                <h2 class="section-title">▼ かしこい ゆうしゃの こうりゃくぼん</h2>
-                {{detailed_guides}}
-            </section>
+            
+        <section class="rpg-section">
+            <h3 class="pixel-heading">▼ 装備のくわしい解説</h3>
+             <div class="guides-container">
+                
+        <article class="guide-card brand-nuro">
+            <h4>🗡️ NURO光（はやぶさの剣）</h4>
+            <p class="desc">FPSゲーマーなら一度は憧れる最強回線。独自のG-PON技術で、他社より頭一つ抜けた速度が出る。</p>
+            <ul class="pros-cons">
+                <li>✅ メリット：理論値が他社の2倍（2Gbps）。Ping値が一桁台になることも。</li>
+                <li>❌ デメリット：工事が2回あり、開通まで1〜2ヶ月かかることがある。提供エリア外の地域がある。</li>
+            </ul>
+            <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW1+298CXE+50+2HC7Z5" class="pixel-btn" target="_blank" rel="noopener noreferrer">公式サイトを見る</a>
+        </article>
+    
+        <article class="guide-card brand-au">
+            <h4>🛡️ auひかり（秘密の抜け道）</h4>
+            <p class="desc">NTTの回線網を使わず、KDDI独自のケーブルを使うため、夜間でも混雑に巻き込まれにくい。</p>
+            <ul class="pros-cons">
+                <li>✅ メリット：独自回線なので安定感が抜群。auユーザーならスマホ代が安くなる。</li>
+                <li>❌ デメリット：解約時に回線撤去工事費がかかる場合がある。</li>
+            </ul>
+            <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW1+1LR38A+348K+3H3676" class="pixel-btn" target="_blank" rel="noopener noreferrer">公式サイトを見る</a>
+        </article>
+    
+        <article class="guide-card brand-gmo">
+            <h4>👕 GMOとくとくBB光（旅人の服）</h4>
+            <p class="desc">契約期間の縛りがなく、いつ解約しても違約金0円。シンプルに安く始めたい人に最適。</p>
+            <ul class="pros-cons">
+                <li>✅ メリット：v6プラス標準装備で速度も十分。月額料金がずっと安い。</li>
+                <li>❌ デメリット：スマホとのセット割引がない（格安SIMユーザー向け）。</li>
+            </ul>
+            <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW0+B3HWGQ+50+6MBTGI" class="pixel-btn" target="_blank" rel="noopener noreferrer">公式サイトを見る</a>
+        </article>
+    
+        <article class="guide-card brand-docomo">
+            <h4>👑 ドコモ光（王家の盾）</h4>
+            <p class="desc">日本全国どこでも使える信頼性はピカイチ。ドコモユーザーならスマホ代が永年割引になり、家族全員が対象。</p>
+            <ul class="pros-cons">
+                <li>✅ メリット：提供エリアが広く、家族全員のスマホ代が安くなる。</li>
+                <li>❌ デメリット：プロバイダ選びが重要（GMO推奨）。現金CBは少なめ。</li>
+            </ul>
+            <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW1+XXR16+50+54MQEQ" class="pixel-btn" target="_blank" rel="noopener noreferrer">公式サイトを見る</a>
+        </article>
+    
+        <article class="guide-card brand-softbank">
+            <h4>🧚 ソフトバンク光（精霊の盾）</h4>
+            <p class="desc">他社から乗り換える際の「違約金」や「工事費」を最大10万円まで満額還元してくれる救世主。</p>
+            <ul class="pros-cons">
+                <li>✅ メリット：乗り換えコストが実質無料。ソフトバンクユーザーはさらに割引。</li>
+                <li>❌ デメリット：夜間の混雑対策に「光BBユニット」が必須。</li>
+            </ul>
+            <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW0+G9957E+50+740LUA" class="pixel-btn" target="_blank" rel="noopener noreferrer">公式サイトを見る</a>
+        </article>
+    
+            </div>
+        </section>
+    
 
             <!-- 4. Destiny Junction -->
             <div class="dungeon-fork">
@@ -483,12 +607,23 @@
             </div>
 
             <!-- NEW: Tavern Rumors (FAQ) -->
-            <section class="tavern-section">
-                <h2 class="section-title">▼ さかばの うわさばなし</h2>
-                <div class="bbs-board">
-                    {{tavern_rumors}}
-                </div>
-            </section>
+            
+        <section class="rpg-section">
+            <h3 class="pixel-heading">▼ 酒場のウワサ（Q&A）</h3>
+            <dl class="faq-list">
+                
+        <dt>Q. マンションでも10Gプランは引ける？</dt>
+        <dd>A. 最近は対応エリアが増えているぞ！ただし建物の設備によるから、まずは公式サイトで「エリア検索」をするのじゃ。</dd>
+    
+        <dt>Q. Wi-FiでFPSをやってもいい？</dt>
+        <dd>A. 喝！！無線は電波干渉を受けやすい。ガチで勝つなら「LANケーブル（CAT6A以上）」で有線接続するのが鉄則じゃ。</dd>
+    
+        <dt>Q. プロバイダって何？</dt>
+        <dd>A. インターネットの世界への「入り口」じゃ。回線（道路）とプロバイダ（関所）がセットになっている光回線を選ぶと楽だぞ。</dd>
+    
+            </dl>
+        </section>
+    
         </div>
     </main>
 
