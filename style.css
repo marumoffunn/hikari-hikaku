@@ -369,56 +369,50 @@ ul {
     color: var(--text-yellow);
 }
 
-/* 4. Comparison Matrix (Retro Table) */
-.comparison-section {
+/* 4. Comparison Matrix (Pixel Table) */
+.rpg-section {
     margin-bottom: 4rem;
 }
 
-.comparison-scroll {
+.table-scroll {
     overflow-x: auto;
     border: 4px solid white;
     background: #000;
 }
 
-.retro-table {
+.pixel-table {
     width: 100%;
     min-width: 800px;
-    /* Ensure table doesn't squish on mobile */
     border-collapse: collapse;
     color: white;
     font-size: 0.9rem;
 }
 
-.retro-table th,
-.retro-table td {
+.pixel-table th,
+.pixel-table td {
     border: 2px solid #555;
     padding: 10px;
     text-align: center;
 }
 
-.retro-table th {
+.pixel-table th {
     background: #222;
     color: var(--text-yellow);
     font-weight: bold;
     white-space: nowrap;
 }
 
-.retro-table tr:nth-child(even) {
+.pixel-table tr:nth-child(even) {
     background: #111;
 }
 
-.retro-table tr:nth-child(odd) {
+.pixel-table tr:nth-child(odd) {
     background: #000;
 }
 
-.col-name {
+.bold-text {
     font-weight: bold;
-    text-align: left !important;
-    background: #1a1a1a;
-}
-
-.col-name .icon {
-    margin-right: 5px;
+    color: var(--text-yellow);
 }
 
 .col-highlight {
@@ -426,117 +420,116 @@ ul {
     font-weight: bold;
 }
 
-.col-gold {
-    color: var(--text-yellow);
-}
-
-/* 5. Detailed Guides (Strategy) */
-.detailed-guides-section {
-    margin-bottom: 4rem;
-}
-
-.review-article {
+/* 5. Detailed Guides (Card Style) */
+.guide-card {
     background: #000;
-    border: 2px solid white;
-    margin-bottom: 2rem;
-    padding: 0;
-}
-
-.review-article .review-title {
-    background: #333;
-    color: white;
-    padding: 15px;
-    margin: 0;
-    font-size: 1.2rem;
-    border-bottom: 2px solid white;
-}
-
-/* Brand Headers for Reviews */
-.review-article.brand-nuro .review-title {
-    background: #990000;
-}
-
-.review-article.brand-au .review-title {
-    background: #cc6600;
-}
-
-.review-article.brand-gmo .review-title {
-    background: #002244;
-}
-
-.review-article.brand-docomo .review-title {
-    background: #cc0000;
-}
-
-.review-article.brand-softbank .review-title {
-    background: #999;
-    color: #000;
-}
-
-.review-content {
+    border: 4px solid white;
     padding: 20px;
+    margin-bottom: 30px;
+    color: white;
 }
 
-.review-section {
-    margin-bottom: 20px;
+/* Brand borders for cards */
+.guide-card.brand-nuro {
+    border-color: #ff3333;
 }
 
-.review-section h4 {
+.guide-card.brand-au {
+    border-color: #ff9900;
+}
+
+.guide-card.brand-gmo {
+    border-color: #3366ff;
+}
+
+.guide-card.brand-docomo {
+    border-color: #cc0000;
+}
+
+.guide-card.brand-softbank {
+    border-color: #cccccc;
+}
+
+.guide-card h4 {
     margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
     color: var(--text-yellow);
-    border-bottom: 1px dotted #666;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    border-bottom: 2px dashed #555;
+    padding-bottom: 10px;
 }
 
-.review-section p {
+.guide-card .desc {
+    margin-bottom: 20px;
     line-height: 1.8;
-    margin: 0;
 }
 
-.mini-btn {
-    width: auto;
+.pros-cons {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    background: #111;
+    padding: 15px;
+    border-radius: 4px;
+    /* Slight round for readability inside pixel box? No, keep it square for pixel feel */
+    border: 1px solid #333;
+}
+
+.pros-cons li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.pros-cons li:last-child {
+    margin-bottom: 0;
+}
+
+.pixel-btn {
     display: inline-block;
-    padding: 10px 30px;
-    font-size: 1rem;
+    background: #cc0000;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border: 2px solid white;
+    box-shadow: 4px 4px 0 #000;
+    /* Simple block shadow */
+    transition: transform 0.1s, box-shadow 0.1s;
 }
 
-/* Monster Info (Terminal) */
+.pixel-btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #000;
+    background: #ff3333;
+}
+
+/* Monster Info (Pixel Style) */
 .monster-section {
     padding: 3rem 0;
 }
 
-.terminal-window {
-    background-color: #001100;
-    border: 4px solid #33ff33;
+.pixel-heading {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 5px solid var(--accent-red);
+}
+
+.pixel-box {
+    background: #000;
+    border: 4px solid white;
     padding: 20px;
-    font-family: monospace;
-    color: #33ff33;
-    box-shadow: 0 0 10px #33ff33;
-}
-
-.terminal-entry {
-    margin-bottom: 2rem;
-    border-bottom: 1px dashed #005500;
-    padding-bottom: 1rem;
-}
-
-.terminal-entry:last-child {
-    border-bottom: none;
-}
-
-.terminal-cursor {
-    margin-right: 10px;
-}
-
-.terminal-term {
-    font-size: 1.2rem;
-    text-decoration: underline;
-}
-
-.terminal-desc {
-    margin: 10px 0 0 25px;
+    color: white;
+    font-size: 1rem;
     line-height: 1.8;
+    box-shadow: 5px 5px 0 #333;
+}
+
+.pixel-hr {
+    border: 0;
+    border-top: 2px dashed #666;
+    margin: 20px 0;
 }
 
 /* Detailed Status Window (Accordion) */
@@ -584,33 +577,20 @@ summary.details-summary:hover {
     color: #88ff88;
 }
 
-/* Tavern Rumors (BBS) */
-.tavern-section {
-    margin-top: 4rem;
-}
-
-.bbs-board {
-    background: #000080;
-    /* Navy Blue */
-    border: 4px double white;
+/* Tavern Rumors (Q&A) */
+.faq-list {
+    background: #000;
+    border: 4px solid white;
     padding: 20px;
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+    margin: 0;
 }
 
-.bbs-thread {
-    background: #efefef;
-    color: black;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 2px solid #999;
-}
-
-.bbs-header {
-    border-bottom: 1px dotted #999;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+.faq-list dt {
+    color: var(--text-yellow);
     font-weight: bold;
-    color: #cc0000;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #666;
+    padding-bottom: 5px;
 }
 
 .bbs-body {
