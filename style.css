@@ -323,13 +323,121 @@ ul {
     color: var(--text-yellow);
 }
 
-/* Footer */
-.game-footer {
-    padding: 2rem;
-    text-align: center;
+/* Monster Info (Terminal) */
+.monster-section {
+    padding: 3rem 0;
+}
+
+.terminal-window {
+    background-color: #001100;
+    border: 4px solid #33ff33;
+    padding: 20px;
+    font-family: monospace;
+    color: #33ff33;
+    box-shadow: 0 0 10px #33ff33;
+}
+
+.terminal-entry {
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed #005500;
+    padding-bottom: 1rem;
+}
+
+.terminal-entry:last-child {
+    border-bottom: none;
+}
+
+.terminal-cursor {
+    margin-right: 10px;
+}
+
+.terminal-term {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.terminal-desc {
+    margin: 10px 0 0 25px;
+    line-height: 1.8;
+}
+
+/* Detailed Status Window (Accordion) */
+details.weapon-details {
+    margin-bottom: 20px;
+    border: 2px solid #555;
     background: #111;
-    border-top: 4px solid white;
+}
+
+summary.details-summary {
+    cursor: pointer;
+    padding: 10px;
+    background: #333;
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    /* Hide default triangle */
+    text-align: center;
+}
+
+summary.details-summary:hover {
+    background: #555;
+}
+
+.details-content {
+    padding: 20px;
+    border-top: 2px solid #555;
+    background: #000;
+}
+
+.details-section {
+    margin-bottom: 20px;
+}
+
+.details-section h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--text-yellow);
+    font-size: 1rem;
+    border-bottom: 1px solid #444;
+}
+
+.skill-list li {
+    margin-bottom: 5px;
+    color: #88ff88;
+}
+
+/* Tavern Rumors (BBS) */
+.tavern-section {
     margin-top: 4rem;
+}
+
+.bbs-board {
+    background: #000080;
+    /* Navy Blue */
+    border: 4px double white;
+    padding: 20px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bbs-thread {
+    background: #efefef;
+    color: black;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #999;
+}
+
+.bbs-header {
+    border-bottom: 1px dotted #999;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.bbs-body {
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 /* Responsive */
