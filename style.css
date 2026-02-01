@@ -420,87 +420,178 @@ ul {
     font-weight: bold;
 }
 
-/* 5. Detailed Guides (Card Style) */
-.guide-card {
-    background: #000;
+/* 5. Detailed Guides (Review Card Style) */
+.guide-card-review {
+    background: #111;
     border: 4px solid white;
+    margin-bottom: 60px;
+    /* Spacer between cards */
     padding: 20px;
-    margin-bottom: 30px;
     color: white;
+    position: relative;
+    box-shadow: 10px 10px 0 #000;
 }
 
-/* Brand borders for cards */
-.guide-card.brand-nuro {
+/* Brand styling */
+.guide-card-review.brand-nuro {
     border-color: #ff3333;
 }
 
-.guide-card.brand-au {
+.guide-card-review.brand-au {
     border-color: #ff9900;
 }
 
-.guide-card.brand-gmo {
+.guide-card-review.brand-gmo {
     border-color: #3366ff;
 }
 
-.guide-card.brand-docomo {
+.guide-card-review.brand-docomo {
     border-color: #cc0000;
 }
 
-.guide-card.brand-softbank {
+.guide-card-review.brand-softbank {
     border-color: #cccccc;
 }
 
-.guide-card h4 {
+.guide-header h3 {
+    font-size: 1.4rem;
     margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
     color: var(--text-yellow);
-    border-bottom: 2px dashed #555;
+    border-bottom: 2px solid #555;
     padding-bottom: 10px;
 }
 
-.guide-card .desc {
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-
-.pros-cons {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-    background: #111;
-    padding: 15px;
-    border-radius: 4px;
-    /* Slight round for readability inside pixel box? No, keep it square for pixel feel */
-    border: 1px solid #333;
-}
-
-.pros-cons li {
-    margin-bottom: 10px;
+.guide-desc {
+    font-size: 0.95rem;
     line-height: 1.6;
 }
 
-.pros-cons li:last-child {
-    margin-bottom: 0;
+.guide-stats {
+    display: flex;
+    justify-content: space-around;
+    background: #222;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
 }
 
-.pixel-btn {
-    display: inline-block;
+.stat-item {
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.stat-val {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.guide-box {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid;
+}
+
+.guide-box h4 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+}
+
+.guide-box ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.guide-box li {
+    margin-bottom: 5px;
+}
+
+/* Merit Box (Blue) */
+.merit-box {
+    background: rgba(0, 50, 100, 0.3);
+    border-color: #3399ff;
+    color: #ccf2ff;
+}
+
+.merit-box h4 {
+    color: #3399ff;
+}
+
+/* Demerit Box (Red) */
+.demerit-box {
+    background: rgba(100, 0, 0, 0.3);
+    border-color: #ff3333;
+    color: #ffcccc;
+}
+
+.demerit-box h4 {
+    color: #ff3333;
+}
+
+.guide-target {
+    text-align: center;
+    background: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.guide-target h4 {
+    margin: 0 0 5px 0;
+    color: var(--text-yellow);
+}
+
+.guide-target p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.guide-action {
+    text-align: center;
+}
+
+.guide-cta-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
     background: #cc0000;
     color: white;
-    text-decoration: none;
-    padding: 12px 30px;
     font-weight: bold;
-    border: 2px solid white;
-    box-shadow: 4px 4px 0 #000;
-    /* Simple block shadow */
-    transition: transform 0.1s, box-shadow 0.1s;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 3px solid white;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-.pixel-btn:hover {
-    transform: translate(2px, 2px);
-    box-shadow: 2px 2px 0 #000;
-    background: #ff3333;
+/* Flashing Animation */
+.flash-effect {
+    animation: flash 2s infinite;
+}
+
+@keyframes flash {
+    0% {
+        background: #cc0000;
+    }
+
+    50% {
+        background: #ff3333;
+        box-shadow: 0 0 15px #ff0000;
+    }
+
+    100% {
+        background: #cc0000;
+    }
 }
 
 /* Monster Info (Pixel Style) */
