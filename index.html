@@ -54,6 +54,16 @@
         </div>
     </section>
 
+    <!-- NEW: Monster Info -->
+    <section class="monster-section">
+        <div class="container">
+            <h2 class="section-title">▼ まものの しょうたいが わかった！</h2>
+            <div class="terminal-window">
+                {{monster_info}}
+            </div>
+        </div>
+    </section>
+
     <!-- 3. Weapon Shop (Rankings) -->
     <main class="main-content">
         <div class="container">
@@ -64,44 +74,76 @@
         <div class="weapon-card" id="rank-1">
             <div class="weapon-header">
                 <div class="weapon-img-wrapper">
-                     <img src="https://placehold.co/600x400/ff6600/ffffff?text=GMO+BB" alt="GMOとくとくBB光" class="weapon-img">
+                     <img src="https://placehold.co/600x400/000000/ffffff?text=FALCON+SWORD" alt="はやぶさの剣【NURO光】" class="weapon-img">
                 </div>
                 <div class="weapon-info">
-                    <h3 class="weapon-name">GMOとくとくBB光</h3>
+                    <h3 class="weapon-name">はやぶさの剣【NURO光】</h3>
                     <div class="weapon-stats">
                         <div class="stat-row">
                             <span class="stat-label">こうげき力:</span>
-                            <span class="stat-value">最大1Gbps（v6プラス対応）</span>
+                            <span class="stat-value">2回攻撃（最大2Gbps）</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">とくしゅこうか:</span>
-                            <span class="stat-value">セット割なしでも圧倒的に安い！契約期間の縛り＆違約金なしで安心</span>
+                            <span class="stat-value">Ping値◎、他社より圧倒的に速い</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">きんか:</span>
-                            <span class="stat-value">戸建て：4,818円 / マンション：3,773円<br>（miniなら戸建て4,400円 / マンション3,300円）</span>
+                            <span class="stat-value">5,200G（円）</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">ほうしゅう:</span>
-                            <span class="stat-value">最大127,000円</span>
+                            <span class="stat-value">45,000ゴールド</span>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="weapon-desc">
-                <p>とにかく安く使いたいならコレ！「とくとくBB光」と格安プラン「mini」が選べます。v6プラス対応で速度も快適、さらに高額キャッシュバックも！</p>
+                <p>攻撃力（速度）重視の勇者に最適。ラグの魔物を一瞬で葬り去る。</p>
                 <p style="color: #aaa; font-size: 0.8rem; margin-top: 10px;">
-                    ▶ 月額料金最安級！新プラン「mini」なら月額3,300円〜使える
+                    ▶ 世界最速の剣。2回攻撃（2Gbps）ができる。
                 </p>
             </div>
 
+             <!-- Detailed Status Window (Accordion) -->
+            <details class="weapon-details">
+                <summary class="details-summary">▼ くわしい のうりょくを みる</summary>
+                <div class="details-content">
+                    <div class="details-section">
+                        <h4>■ きほんステータス</h4>
+                        <ul>
+                            <li>さいだい速度：2回攻撃（最大2Gbps）</li>
+                            <li>かいせん縛り：2年縛り</li>
+                            <li>じっしつ月額：5,200G（円）</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-section">
+                        <h4>■ とくしゅスキル</h4>
+                        <ul class="skill-list">
+                            <li>★ 下り最大2Gbpsの超高速連撃</li><li>★ 高性能WiFiルーター標準装備</li><li>★ ソフトバンクスマホのセット割適用</li>
+                        </ul>
+                    </div>
+
+                    <div class="details-section">
+                        <h4 style="color: #d32f2f;">■ のろい（デメリット）</h4>
+                        <p>💀 開通工事が2回必要で、使えるようになるまで時間がかかる。</p>
+                    </div>
+
+                    <div class="details-section">
+                        <h4>■ かくとくゴールド</h4>
+                        <p>💰 45,000ゴールド</p>
+                    </div>
+                </div>
+            </details>
+
             <div class="weapon-action">
-                <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW0+B3HWGQ+50+6MBTGI" class="equip-btn" target="_blank" rel="noopener noreferrer">
+                <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW1+298CXE+50+2HC7Z5" class="equip-btn" target="_blank" rel="noopener noreferrer">
                     そうびする（公式へ）
                 </a>
                 <div style="margin-top: 10px;">
-                    <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4AVIW0+B3HWGQ+50+6MBTGI" alt="">
+                    <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AVIW1+298CXE+50+2HC7Z5" alt="">
                 </div>
             </div>
         </div>
@@ -109,127 +151,69 @@
         <div class="weapon-card" id="rank-2">
             <div class="weapon-header">
                 <div class="weapon-img-wrapper">
-                     <img src="https://placehold.co/600x400/0066cc/ffffff?text=SoftBank" alt="ソフトバンク光" class="weapon-img">
+                     <img src="https://placehold.co/600x400/000000/ffffff?text=SECRET+MAP" alt="秘密の抜け道マップ【auひかり】" class="weapon-img">
                 </div>
                 <div class="weapon-info">
-                    <h3 class="weapon-name">ソフトバンク光</h3>
+                    <h3 class="weapon-name">秘密の抜け道マップ【auひかり】</h3>
                     <div class="weapon-stats">
                         <div class="stat-row">
                             <span class="stat-label">こうげき力:</span>
-                            <span class="stat-value">最大1Gbps</span>
+                            <span class="stat-value">最大1Gbps（独自ルート）</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">とくしゅこうか:</span>
-                            <span class="stat-value">スマホセット割で家族全員が割引対象、年間最大26,400円お得</span>
+                            <span class="stat-value">夜もスイスイ進める</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">きんか:</span>
-                            <span class="stat-value">戸建て：5,720円 / マンション：4,180円</span>
+                            <span class="stat-value">5,610G〜</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">ほうしゅう:</span>
-                            <span class="stat-value">最大36,000円＋高性能ルーター</span>
+                            <span class="stat-value">最大77,000ゴールド</span>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="weapon-desc">
-                <p>ソフトバンク・ワイモバイルユーザーなら絶対お得な光回線。スマホセット割に加え、GMO限定で高額キャッシュバック＋ルーターがもらえます。</p>
+                <p>人混みを避けて快適に旅をしたい勇者へ。独自回線でストレスフリー。</p>
                 <p style="color: #aaa; font-size: 0.8rem; margin-top: 10px;">
-                    ▶ ソフトバンク・ワイモバイルユーザーなら毎月最大1,100円割引！
+                    ▶ 魔物に遭遇しない独自のルートを通れる地図。
                 </p>
             </div>
 
-            <div class="weapon-action">
-                <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW0+G9957E+50+740LUA" class="equip-btn" target="_blank" rel="noopener noreferrer">
-                    そうびする（公式へ）
-                </a>
-                <div style="margin-top: 10px;">
-                    <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AVIW0+G9957E+50+740LUA" alt="">
-                </div>
-            </div>
-        </div>
-    
-        <div class="weapon-card" id="rank-3">
-            <div class="weapon-header">
-                <div class="weapon-img-wrapper">
-                     <img src="https://placehold.co/600x400/cc0000/ffffff?text=docomo" alt="ドコモ光" class="weapon-img">
-                </div>
-                <div class="weapon-info">
-                    <h3 class="weapon-name">ドコモ光</h3>
-                    <div class="weapon-stats">
-                        <div class="stat-row">
-                            <span class="stat-label">こうげき力:</span>
-                            <span class="stat-value">最大1Gbps</span>
-                        </div>
-                        <div class="stat-row">
-                            <span class="stat-label">とくしゅこうか:</span>
-                            <span class="stat-value">ドコモスマホとセットで家族全員割引、年間最大26,400円お得</span>
-                        </div>
-                        <div class="stat-row">
-                            <span class="stat-label">きんか:</span>
-                            <span class="stat-value">戸建て：5,720円 / マンション：4,400円</span>
-                        </div>
-                        <div class="stat-row">
-                            <span class="stat-label">ほうしゅう:</span>
-                            <span class="stat-value">dポイント2,000pt</span>
-                        </div>
+             <!-- Detailed Status Window (Accordion) -->
+            <details class="weapon-details">
+                <summary class="details-summary">▼ くわしい のうりょくを みる</summary>
+                <div class="details-content">
+                    <div class="details-section">
+                        <h4>■ きほんステータス</h4>
+                        <ul>
+                            <li>さいだい速度：最大1Gbps（独自ルート）</li>
+                            <li>かいせん縛り：3年縛り</li>
+                            <li>じっしつ月額：5,610G〜</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-            
-            <div class="weapon-desc">
-                <p>ドコモユーザーなら必携の光回線。スマホとセットで大幅割引＋dポイントも貯まってお得です。</p>
-                <p style="color: #aaa; font-size: 0.8rem; margin-top: 10px;">
-                    ▶ ドコモユーザーなら毎月最大1,100円割引！dポイントもザクザク貯まる
-                </p>
-            </div>
+                    
+                    <div class="details-section">
+                        <h4>■ とくしゅスキル</h4>
+                        <ul class="skill-list">
+                            <li>★ auスマートバリュー適用</li><li>★ 独自回線で混雑回避</li><li>★ 他社違約金還元キャンペーン</li>
+                        </ul>
+                    </div>
 
-            <div class="weapon-action">
-                <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW1+XXR16+50+54MQEQ" class="equip-btn" target="_blank" rel="noopener noreferrer">
-                    そうびする（公式へ）
-                </a>
-                <div style="margin-top: 10px;">
-                    <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4AVIW1+XXR16+50+54MQEQ" alt="">
-                </div>
-            </div>
-        </div>
-    
-        <div class="weapon-card" id="rank-4">
-            <div class="weapon-header">
-                <div class="weapon-img-wrapper">
-                     <img src="https://placehold.co/600x400/ff9900/ffffff?text=au" alt="auひかり" class="weapon-img">
-                </div>
-                <div class="weapon-info">
-                    <h3 class="weapon-name">auひかり</h3>
-                    <div class="weapon-stats">
-                        <div class="stat-row">
-                            <span class="stat-label">こうげき力:</span>
-                            <span class="stat-value">最大1Gbps（独自回線）</span>
-                        </div>
-                        <div class="stat-row">
-                            <span class="stat-label">とくしゅこうか:</span>
-                            <span class="stat-value">独自回線だから混雑時も快適、他社より平均速度が1.5倍速い</span>
-                        </div>
-                        <div class="stat-row">
-                            <span class="stat-label">きんか:</span>
-                            <span class="stat-value">戸建て：5,610円 / マンション：4,180円</span>
-                        </div>
-                        <div class="stat-row">
-                            <span class="stat-label">ほうしゅう:</span>
-                            <span class="stat-value">最大77,000円（最短1ヶ月後振込）</span>
-                        </div>
+                    <div class="details-section">
+                        <h4 style="color: #d32f2f;">■ のろい（デメリット）</h4>
+                        <p>💀 解約時に回線撤去費用が発生する場合がある。</p>
+                    </div>
+
+                    <div class="details-section">
+                        <h4>■ かくとくゴールド</h4>
+                        <p>💰 最大77,000ゴールド</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="weapon-desc">
-                <p>代理店NEXTならオプション加入なしで高額キャッシュバック！手続きも簡単で、振込までの期間が短いのが特徴です。</p>
-                <p style="color: #aaa; font-size: 0.8rem; margin-top: 10px;">
-                    ▶ au・UQモバイルユーザーなら毎月最大1,100円割引！独自回線で超高速
-                </p>
-            </div>
+            </details>
 
             <div class="weapon-action">
                 <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW1+1LR38A+348K+3H3676" class="equip-btn" target="_blank" rel="noopener noreferrer">
@@ -241,47 +225,233 @@
             </div>
         </div>
     
-        <div class="weapon-card" id="rank-5">
+        <div class="weapon-card" id="rank-3">
             <div class="weapon-header">
                 <div class="weapon-img-wrapper">
-                     <img src="https://placehold.co/600x400/6600cc/ffffff?text=NURO" alt="NURO光" class="weapon-img">
+                     <img src="https://placehold.co/600x400/000000/ffffff?text=TRAVELER+CLOTH" alt="旅人の服【GMOとくとくBB光】" class="weapon-img">
                 </div>
                 <div class="weapon-info">
-                    <h3 class="weapon-name">NURO光</h3>
+                    <h3 class="weapon-name">旅人の服【GMOとくとくBB光】</h3>
                     <div class="weapon-stats">
                         <div class="stat-row">
                             <span class="stat-label">こうげき力:</span>
-                            <span class="stat-value">最大2Gbps※</span>
+                            <span class="stat-value">最大1Gbps</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">とくしゅこうか:</span>
-                            <span class="stat-value">他社の2倍の速度（最大2Gbps※）、速度重視なら圧倒的</span>
+                            <span class="stat-value">いつ脱いでも（解約しても）違約金ゼロ</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">きんか:</span>
-                            <span class="stat-value">戸建て・マンション共通：5,200円</span>
+                            <span class="stat-value">3,430G〜（業界最安級）</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">ほうしゅう:</span>
-                            <span class="stat-value">45,000円</span>
+                            <span class="stat-value">最大30,000ゴールド</span>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="weapon-desc">
-                <p>下り最大2Gbps※の超高速光回線。オンラインゲームや4K動画視聴など、速度を重視する方に最適です。<br><small>※通信速度は技術規格上の最大値であり、実使用速度を示すものではありません。<br>※「No.1」はJ.D. パワー2025年固定ブロードバンド回線サービス顧客満足度調査（関東エリア）による。<br>※特典は予告なく終了・変更になる場合があります。</small></p>
+                <p>縛られたくない自由な勇者へ。安さと手軽さが魅力。</p>
                 <p style="color: #aaa; font-size: 0.8rem; margin-top: 10px;">
-                    ▶ 下り最大2Gbpsの超高速！オンラインゲーム・動画視聴に最適
+                    ▶ 安くて身軽な服。呪い（契約縛り）がない。
                 </p>
             </div>
 
+             <!-- Detailed Status Window (Accordion) -->
+            <details class="weapon-details">
+                <summary class="details-summary">▼ くわしい のうりょくを みる</summary>
+                <div class="details-content">
+                    <div class="details-section">
+                        <h4>■ きほんステータス</h4>
+                        <ul>
+                            <li>さいだい速度：最大1Gbps</li>
+                            <li>かいせん縛り：なし（呪いなし）</li>
+                            <li>じっしつ月額：3,430G〜（業界最安級）</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-section">
+                        <h4>■ とくしゅスキル</h4>
+                        <ul class="skill-list">
+                            <li>★ 契約期間の縛りなし</li><li>★ 月額料金がずっと安い</li><li>★ v6プラス対応</li>
+                        </ul>
+                    </div>
+
+                    <div class="details-section">
+                        <h4 style="color: #d32f2f;">■ のろい（デメリット）</h4>
+                        <p>💀 スマホとのセット割引がない。</p>
+                    </div>
+
+                    <div class="details-section">
+                        <h4>■ かくとくゴールド</h4>
+                        <p>💰 最大30,000ゴールド</p>
+                    </div>
+                </div>
+            </details>
+
             <div class="weapon-action">
-                <a href="https://www.nuro.jp/hikari/pr/sp/?utm_source=a8&utm_medium=affiliate" class="equip-btn" target="_blank" rel="noopener noreferrer">
+                <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW0+B3HWGQ+50+6MBTGI" class="equip-btn" target="_blank" rel="noopener noreferrer">
                     そうびする（公式へ）
                 </a>
                 <div style="margin-top: 10px;">
+                    <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AVIW0+B3HWGQ+50+6MBTGI" alt="">
+                </div>
+            </div>
+        </div>
+    
+        <div class="weapon-card" id="rank-4">
+            <div class="weapon-header">
+                <div class="weapon-img-wrapper">
+                     <img src="https://placehold.co/600x400/000000/ffffff?text=ROYAL+SHIELD" alt="王家の盾【ドコモ光】" class="weapon-img">
+                </div>
+                <div class="weapon-info">
+                    <h3 class="weapon-name">王家の盾【ドコモ光】</h3>
+                    <div class="weapon-stats">
+                        <div class="stat-row">
+                            <span class="stat-label">こうげき力:</span>
+                            <span class="stat-value">最大1Gbps</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">とくしゅこうか:</span>
+                            <span class="stat-value">ドコモスマホ代が永年割引</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">きんか:</span>
+                            <span class="stat-value">4,400G〜</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">ほうしゅう:</span>
+                            <span class="stat-value">2,000pt + 38,000ゴールド</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="weapon-desc">
+                <p>ドコモユーザーなら迷わずこれ。鉄壁の守り（割引）ときはめきの加護（ポイント）が得られる。</p>
+                <p style="color: #aaa; font-size: 0.8rem; margin-top: 10px;">
+                    ▶ ドコモの紋章を持つ者を守る盾。
+                </p>
+            </div>
+
+             <!-- Detailed Status Window (Accordion) -->
+            <details class="weapon-details">
+                <summary class="details-summary">▼ くわしい のうりょくを みる</summary>
+                <div class="details-content">
+                    <div class="details-section">
+                        <h4>■ きほんステータス</h4>
+                        <ul>
+                            <li>さいだい速度：最大1Gbps</li>
+                            <li>かいせん縛り：2年縛り</li>
+                            <li>じっしつ月額：4,400G〜</li>
+                        </ul>
+                    </div>
                     
+                    <div class="details-section">
+                        <h4>■ とくしゅスキル</h4>
+                        <ul class="skill-list">
+                            <li>★ ドコモ光セット割適用</li><li>★ dポイント大量還元</li><li>★ v6プラス対応</li>
+                        </ul>
+                    </div>
+
+                    <div class="details-section">
+                        <h4 style="color: #d32f2f;">■ のろい（デメリット）</h4>
+                        <p>💀 ドコモユーザー以外が装備しても効果が薄い。</p>
+                    </div>
+
+                    <div class="details-section">
+                        <h4>■ かくとくゴールド</h4>
+                        <p>💰 2,000pt + 38,000ゴールド</p>
+                    </div>
+                </div>
+            </details>
+
+            <div class="weapon-action">
+                <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW1+XXR16+50+54MQEQ" class="equip-btn" target="_blank" rel="noopener noreferrer">
+                    そうびする（公式へ）
+                </a>
+                <div style="margin-top: 10px;">
+                    <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4AVIW1+XXR16+50+54MQEQ" alt="">
+                </div>
+            </div>
+        </div>
+    
+        <div class="weapon-card" id="rank-5">
+            <div class="weapon-header">
+                <div class="weapon-img-wrapper">
+                     <img src="https://placehold.co/600x400/cccccc/000000?text=SPIRIT+SHIELD" alt="精霊の盾【ソフトバンク光】" class="weapon-img">
+                </div>
+                <div class="weapon-info">
+                    <h3 class="weapon-name">精霊の盾【ソフトバンク光】</h3>
+                    <div class="weapon-stats">
+                        <div class="stat-row">
+                            <span class="stat-label">こうげき力:</span>
+                            <span class="stat-value">最大1Gbps</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">とくしゅこうか:</span>
+                            <span class="stat-value">他社からの呪い（違約金）を浄化（全額還元）</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">きんか:</span>
+                            <span class="stat-value">5,720G / 4,180G</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">ほうしゅう:</span>
+                            <span class="stat-value">最大40,000ゴールド</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="weapon-desc">
+                <p>ソフトバンクユーザーには必須の装備。他社から乗り換える時のコストをゼロにしてくれる。</p>
+                <p style="color: #aaa; font-size: 0.8rem; margin-top: 10px;">
+                    ▶ 精霊（ソフトバンク）の加護を受ける盾。
+                </p>
+            </div>
+
+             <!-- Detailed Status Window (Accordion) -->
+            <details class="weapon-details">
+                <summary class="details-summary">▼ くわしい のうりょくを みる</summary>
+                <div class="details-content">
+                    <div class="details-section">
+                        <h4>■ きほんステータス</h4>
+                        <ul>
+                            <li>さいだい速度：最大1Gbps</li>
+                            <li>かいせん縛り：2年縛り</li>
+                            <li>じっしつ月額：5,720G / 4,180G</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-section">
+                        <h4>■ とくしゅスキル</h4>
+                        <ul class="skill-list">
+                            <li>★ おうち割 光セット適用</li><li>★ 他社違約金全額還元</li><li>★ 開通前WiFiレンタル無料</li>
+                        </ul>
+                    </div>
+
+                    <div class="details-section">
+                        <h4 style="color: #d32f2f;">■ のろい（デメリット）</h4>
+                        <p>💀 夜間の混雑時間帯に速度が落ちることがある。</p>
+                    </div>
+
+                    <div class="details-section">
+                        <h4>■ かくとくゴールド</h4>
+                        <p>💰 最大40,000ゴールド</p>
+                    </div>
+                </div>
+            </details>
+
+            <div class="weapon-action">
+                <a href="https://px.a8.net/svt/ejp?a8mat=4AVIW0+G9957E+50+740LUA" class="equip-btn" target="_blank" rel="noopener noreferrer">
+                    そうびする（公式へ）
+                </a>
+                <div style="margin-top: 10px;">
+                    <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AVIW0+G9957E+50+740LUA" alt="">
                 </div>
             </div>
         </div>
@@ -329,6 +499,14 @@
                     </div>
                 </div>
             </div>
+
+            <!-- NEW: Tavern Rumors (FAQ) -->
+            <section class="tavern-section">
+                <h2 class="section-title">▼ さかばの うわさばなし</h2>
+                <div class="bbs-board">
+                    {{tavern_rumors}}
+                </div>
+            </section>
         </div>
     </main>
 
