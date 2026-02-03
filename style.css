@@ -64,6 +64,42 @@ ul {
     background: black;
 }
 
+/* Animations */
+@keyframes walk {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes talk {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(0.92);
+    }
+}
+
+.pixel-char {
+    /* Existing styles probably here, just ensuring animation is added */
+    animation: walk 0.6s steps(2) infinite;
+}
+
+.pixel-char.talking {
+    animation:
+        walk 0.6s steps(2) infinite,
+        talk 0.2s steps(2) infinite;
+}
+
 /* 1. Hero Screen */
 .hero-screen {
     background: #000;
