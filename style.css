@@ -71,39 +71,45 @@ ul {
 }
 
 /* Animations */
+/* Animations */
 @keyframes walk {
-
-    0%,
-    100% {
+    0% {
         transform: translateY(0);
     }
 
-    50% {
-        transform: translateY(-6px);
+    100% {
+        transform: translateY(-10px);
     }
 }
 
 @keyframes talk {
-
-    0%,
-    100% {
-        transform: scaleY(1);
+    0% {
+        transform: scale(1);
+        filter: brightness(1);
     }
 
     50% {
-        transform: scaleY(0.92);
+        transform: scale(1.05);
+        filter: brightness(1.2);
     }
 }
 
+/* Apply walk to the container (Character + Name) */
+.character-portrait {
+    animation: walk 0.8s ease-in-out infinite alternate;
+}
+
 .pixel-char {
-    /* Existing styles probably here, just ensuring animation is added */
-    animation: walk 0.6s steps(2) infinite;
+    display: block;
+    width: 100px;
+    /* Adjust as needed */
+    height: auto;
+    transform-origin: bottom center;
+    image-rendering: pixelated;
 }
 
 .pixel-char.talking {
-    animation:
-        walk 0.6s steps(2) infinite,
-        talk 0.2s steps(2) infinite;
+    animation: talk 0.15s steps(2) infinite;
 }
 
 /* 1. Hero Screen */
