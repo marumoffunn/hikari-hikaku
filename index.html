@@ -24,40 +24,47 @@
         <div class="scanlines"></div>
     </header>
 
-    <!-- 2. Prologue -->
-    <section id="prologue" class="prologue-section">
-        <div class="container">
-            <!-- Princess Message -->
-            <div class="message-window-wrapper">
-                <div class="character-portrait char-left">
-                    <img src="princess.png" alt="Princess" class="pixel-char">
-                    <div class="char-name-box">ひめ</div>
-                </div>
-                <div class="message-window">
-                    <p class="typing-text">ゆうしゃさま！ おしろの ネットかいせんが<br>ラグのまものに のろわれてしまったのです…<br>APEXが カクついて まともに うごきません…
-                    </p>
-                    <span class="blinking-cursor">▼</span>
-                </div>
-            </div>
+    <!-- Hero Battle Section (Wraps Prologue + Weapon Shop) -->
+    <section id="hero-battle" class="hero-battle-section">
+        <div class="battle-overlay"></div>
+        <div class="battle-content">
 
-            <!-- Hero Message -->
-            <div class="message-window-wrapper reverse">
-                <div class="message-window">
-                    <p class="typing-text">ひめ、ごあんしんを。<br>このくにには『でんせつの5だいひかりかいせん』が<br>あるとききます。わたしが さがしだしてまいりましょう！</p>
-                    <span class="blinking-cursor">▼</span>
-                </div>
-                <div class="character-portrait char-right">
-                    <img src="hero.png" alt="Hero" class="pixel-char">
-                    <div class="char-name-box">ゆうしゃ</div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!-- 2. Prologue -->
+            <section id="prologue" class="prologue-section">
+                <div class="container">
+                    <!-- Princess Message -->
+                    <div class="message-window-wrapper">
+                        <div class="character-portrait char-left">
+                            <img src="princess.png" alt="Princess" class="pixel-char">
+                            <div class="char-name-box">ひめ</div>
+                        </div>
+                        <div class="message-window">
+                            <p class="typing-text">ゆうしゃさま！ おしろの ネットかいせんが<br>ラグのまものに のろわれてしまったのです…<br>APEXが カクついて まともに
+                                うごきません…
+                            </p>
+                            <span class="blinking-cursor">▼</span>
+                        </div>
+                    </div>
 
-    <!-- NEW: Monster Info -->
-    <section class="monster-section">
-        <div class="container">
-            
+                    <!-- Hero Message -->
+                    <div class="message-window-wrapper reverse">
+                        <div class="message-window">
+                            <p class="typing-text">ひめ、ごあんしんを。<br>このくにには『でんせつの5だいひかりかいせん』が<br>あるとききます。わたしが さがしだしてまいりましょう！
+                            </p>
+                            <span class="blinking-cursor">▼</span>
+                        </div>
+                        <div class="character-portrait char-right">
+                            <img src="hero.png" alt="Hero" class="pixel-char">
+                            <div class="char-name-box">ゆうしゃ</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NEW: Monster Info -->
+            <section class="monster-section">
+                <div class="container">
+                    
         <h3 class="pixel-heading">▼ 魔物図鑑（ラグの正体）</h3>
         <div class="pixel-box">
             
@@ -75,16 +82,16 @@
     
         </div>
     
-        </div>
-    </section>
+                </div>
+            </section>
 
-    <!-- 3. Weapon Shop (Rankings) -->
-    <main class="main-content">
-        <div class="container">
-            <h2 class="section-title">▼ ぶきやに とうちゃくした！</h2>
+            <!-- 3. Weapon Shop (Rankings) -->
+            <main class="main-content">
+                <div class="container">
+                    <h2 class="section-title">▼ ぶきやに とうちゃくした！</h2>
 
-            <div class="weapon-list">
-                
+                    <div class="weapon-list">
+                        
         <div class="weapon-card brand-nuro" id="rank-1">
             <div class="brand-header">
                 <span class="fantasy-badge">⚔️ はやぶさの剣</span>
@@ -440,10 +447,10 @@
             </div>
         </div>
     
-            </div>
+                    </div>
 
-            <!-- NEW: Comparison Matrix -->
-            
+                    <!-- NEW: Comparison Matrix -->
+                    
         <section class="rpg-section">
             <h3 class="pixel-heading">▼ 伝説の装備・性能ひかく表</h3>
             <div class="table-scroll">
@@ -504,8 +511,8 @@
         </section>
     
 
-            <!-- NEW: Detailed Guides -->
-            
+                    <!-- NEW: Detailed Guides -->
+                    
         <section class="rpg-section">
             <h3 class="pixel-heading">▼ 装備のくわしい解説</h3>
              <div class="guides-container">
@@ -564,38 +571,40 @@
         </section>
     
 
-            <!-- 4. Destiny Junction -->
-            <div class="dungeon-fork">
-                <h2 class="section-title">▼ うんめいの わかれみち</h2>
-                <div class="flow-chart">
-                    <div class="flow-box question">
-                        <p>スマホは ドコモ ですか？</p>
-                        <div class="flow-arrows">
-                            <div class="arrow-path">
-                                <span class="arrow-label">はい</span>
-                                <div class="flow-line right"></div>
-                                <div class="flow-box answer">
-                                    <p>おうけのたて<br>（ドコモ光）</p>
-                                </div>
-                            </div>
-                            <div class="arrow-path">
-                                <span class="arrow-label">いいえ</span>
-                                <div class="flow-line left"></div>
-                                <div class="flow-box question">
-                                    <p>スマホは ソフトバンク？</p>
-                                    <div class="flow-arrows">
-                                        <div class="arrow-path">
-                                            <span class="arrow-label">はい</span>
-                                            <div class="flow-line right"></div>
-                                            <div class="flow-box answer">
-                                                <p>せいれいのたて<br>（ソフトバンク光）</p>
-                                            </div>
+                    <!-- 4. Destiny Junction -->
+                    <div class="dungeon-fork">
+                        <h2 class="section-title">▼ うんめいの わかれみち</h2>
+                        <div class="flow-chart">
+                            <div class="flow-box question">
+                                <p>スマホは ドコモ ですか？</p>
+                                <div class="flow-arrows">
+                                    <div class="arrow-path">
+                                        <span class="arrow-label">はい</span>
+                                        <div class="flow-line right"></div>
+                                        <div class="flow-box answer">
+                                            <p>おうけのたて<br>（ドコモ光）</p>
                                         </div>
-                                        <div class="arrow-path">
-                                            <span class="arrow-label">いいえ</span>
-                                            <div class="flow-line left"></div>
-                                            <div class="flow-box answer">
-                                                <p>たびびとのふく<br>（GMO光）</p>
+                                    </div>
+                                    <div class="arrow-path">
+                                        <span class="arrow-label">いいえ</span>
+                                        <div class="flow-line left"></div>
+                                        <div class="flow-box question">
+                                            <p>スマホは ソフトバンク？</p>
+                                            <div class="flow-arrows">
+                                                <div class="arrow-path">
+                                                    <span class="arrow-label">はい</span>
+                                                    <div class="flow-line right"></div>
+                                                    <div class="flow-box answer">
+                                                        <p>せいれいのたて<br>（ソフトバンク光）</p>
+                                                    </div>
+                                                </div>
+                                                <div class="arrow-path">
+                                                    <span class="arrow-label">いいえ</span>
+                                                    <div class="flow-line left"></div>
+                                                    <div class="flow-box answer">
+                                                        <p>たびびとのふく<br>（GMO光）</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -603,11 +612,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- NEW: Tavern Rumors (FAQ) -->
-            
+                    <!-- NEW: Tavern Rumors (FAQ) -->
+                    
         <section class="rpg-section">
             <h3 class="pixel-heading">▼ 酒場のウワサ（Q&A）</h3>
             <dl class="faq-list">
@@ -624,14 +631,42 @@
             </dl>
         </section>
     
-        </div>
-    </main>
+                </div>
+            </main>
+
+        </div><!-- .battle-content -->
+    </section><!-- #hero-battle -->
 
     <footer class="game-footer">
         <div class="container">
             <p class="copyright">© 2026 HIKARI QUEST. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Sword Button -->
+    <button id="back-to-top" class="back-to-top-sword" title="トップへ戻る">
+        <span class="sword-icon">⚔️</span>
+    </button>
+
+    <script>
+        // Back to Top Button Logic
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>
