@@ -643,9 +643,9 @@
         </div>
     </footer>
 
-    <!-- Back to Top Sword Button -->
+    <!-- Back to Top Stairs Button -->
     <button id="back-to-top" class="back-to-top-sword" title="トップへ戻る">
-        <span class="sword-icon">⚔️</span>
+        <span class="sword-icon">🪜</span>
     </button>
 
     <script>
@@ -660,11 +660,18 @@
             }
         });
 
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const scrollDuration = 800; // ms
+            const scrollStep = -window.scrollY / (scrollDuration / 15);
+
+            const scrollInterval = setInterval(() => {
+                if (window.scrollY !== 0) {
+                    window.scrollBy(0, scrollStep);
+                } else {
+                    clearInterval(scrollInterval);
+                }
+            }, 15);
         });
     </script>
 </body>
