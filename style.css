@@ -124,25 +124,11 @@ ul {
     position: relative;
     background-image: url('battle_bg.png');
     background-size: cover;
-    background-position: center top;
-    background-attachment: fixed;
+    background-position: center center;
+    background-attachment: scroll;
+    /* Safe for all browsers including mobile */
     background-repeat: no-repeat;
     background-color: #1a3a1a;
-    /* Fallback color */
-}
-
-@media (max-width: 768px) {
-    .hero-battle-section {
-        background-attachment: scroll;
-        background-size: cover;
-        background-position: center bottom;
-        min-height: 100vh;
-    }
-
-    .battle-overlay {
-        background: rgba(0, 0, 0, 0.4);
-        /* Lighter overlay on mobile */
-    }
 }
 
 .battle-overlay {
