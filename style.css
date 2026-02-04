@@ -136,9 +136,8 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    /* Darker overlay for readability */
-    /* Much lighter - 30% */
+    background: rgba(0, 0, 0, 0.45);
+    /* Adjusted overlay (45%) */
     pointer-events: none;
     z-index: 0;
 }
