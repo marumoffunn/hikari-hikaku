@@ -723,6 +723,13 @@
             if (prologue) observer.observe(prologue);
         });
     </script>
+    <script>
+        // Force scroll to top on page load
+        if (window.location.hash) {
+            history.replaceState(null, null, ' ');
+        }
+        window.scrollTo(0, 0);
+    </script>
 
 </body>
 
