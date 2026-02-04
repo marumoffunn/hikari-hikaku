@@ -96,7 +96,7 @@ ul {
 
 /* Apply walk to the container (Character + Name) */
 .character-portrait {
-    animation: walk 0.8s ease-in-out infinite alternate;
+    /* animation: walk 0.8s ease-in-out infinite alternate; */
 }
 
 .pixel-char {
