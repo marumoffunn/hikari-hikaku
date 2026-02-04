@@ -207,6 +207,19 @@ ul {
     text-align: center;
 }
 
+/* Promotion Alert */
+.promotion-alert {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #888;
+    margin: 0;
+    z-index: 10;
+}
+
 .sub-title {
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -802,4 +815,25 @@ summary.details-summary:hover {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #888;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
 }
