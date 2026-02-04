@@ -661,55 +661,70 @@
 
 
 
-    // RPG Typewriter Effect & Talking Animation
-    document.addEventListener('DOMContentLoaded', () => {
-    const textElements = document.querySelectorAll('.typing-text');
+    <script>
+        // RPG Typewriter Effect & Talking Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const textElements = document.querySelectorAll('.typing-text');
 
-    // Helper to wait
-    const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+            // Helper to wait
+            const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-    const typeWriter = async (element, speed = 50) => {
-    const text = element.innerHTML.replace(/<br>/g, '\n'); // Handle line breaks
-    element.innerHTML = '';
-    element.style.visibility = 'visible';
+            const typeWriter = async (element, speed = 50) => {
+                const text = element.innerHTML.replace(/<br>/g, '\n'); // Handle line breaks
+                element.innerHTML = '';
+                element.style.visibility = 'visible';
 
-    // Find associated character to animate
-    const wrapper = element.closest('.message-window-wrapper');
-    let charImg = null;
-    if (wrapper) {
-    charImg = wrapper.querySelector('.pixel-char');
-    if (charImg) charImg.classList.add('talking');
-    }
+                // Find associated character to animate
+                const wrapper = element.closest('.message-window-wrapper');
+                let charImg = null;
+                if (wrapper) {
+                    charImg = wrapper.querySelector('.pixel-char');
+                    if (charImg) charImg.classList.add('talking');
+                }
 
-    let i = 0;
-    while (i < text.length) { const char=text.charAt(i); if (char==='\n' ) { element.innerHTML +='<br>' ; } else {
-        element.innerHTML +=char; } i++; await wait(speed); } // Stop talking animation if (charImg)
-        charImg.classList.remove('talking'); }; // Sequence: Princess -> Wait -> Hero
-        const runDialogue = async () => {
-        // Hide all initially
-        textElements.forEach(el => el.style.visibility = 'hidden');
+                let i = 0;
+                while (i < text.length) {
+                    const char = text.charAt(i);
+                    if (char === '\n') {
+                        element.innerHTML += '<br>';
+                    } else {
+                        element.innerHTML += char;
+                    }
+                    i++;
+                    await wait(speed);
+                }
+                // Stop talking animation
+                if (charImg) charImg.classList.remove('talking');
+            };
 
-        // Princess speaks
-        if (textElements[0]) await typeWriter(textElements[0]);
+            // Sequence: Princess -> Wait -> Hero
+            const runDialogue = async () => {
+                // Hide all initially
+                textElements.forEach(el => el.style.visibility = 'hidden');
 
-        await wait(800);
+                // Princess speaks
+                if (textElements[0]) await typeWriter(textElements[0]);
 
-        // Hero speaks
-        if (textElements[1]) await typeWriter(textElements[1]);
-        };
+                await wait(800);
 
-        // Start dialogue when prologue is in view (intersection observer)
-        const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-        runDialogue();
-        observer.disconnect();
-        }
+                // Hero speaks
+                if (textElements[1]) await typeWriter(textElements[1]);
+            };
+
+            // Start dialogue when prologue is in view (intersection observer)
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    runDialogue();
+                    observer.disconnect();
+                }
+            });
+
+            const prologue = document.getElementById('prologue');
+            if (prologue) observer.observe(prologue);
         });
-
-        const prologue = document.getElementById('prologue');
-        if (prologue) observer.observe(prologue);
-        });
-        </script>
+    </script>
+    });
+    </script>
 </body>
 
 </html>
