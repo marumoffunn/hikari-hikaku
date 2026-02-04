@@ -123,12 +123,12 @@ ul {
 .hero-battle-section {
     position: relative;
     background-image: url('battle_bg.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-attachment: scroll;
     /* Safe for all browsers including mobile */
-    background-repeat: no-repeat;
-    background-color: #1a3a1a;
+    background-repeat: repeat;
+    background-color: #4a8c4a;
 }
 
 .battle-overlay {
