@@ -129,6 +129,13 @@ ul {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+    .hero-battle-section {
+        background-attachment: scroll;
+        /* Fix for mobile browsers */
+    }
+}
+
 .battle-overlay {
     position: absolute;
     top: 0;
